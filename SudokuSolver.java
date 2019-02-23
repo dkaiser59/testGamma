@@ -3,12 +3,12 @@ package de.dkaiser.sudoku.parts;
 public class SudokuSolver {
 
 	private boolean[][][] possibleValue = new boolean[9][9][9];
+	
+	private int[][] finalValue = new int[9][9];
 
 	public boolean[][][] getPossibleValue() {
 		return possibleValue;
 	}
-
-	private int[][] finalValue = new int[9][9];
 
 	public int[][] solve(int[][] initalValues) {
 
